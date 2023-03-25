@@ -13,13 +13,26 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-dotnettools.csharp"
+				"ms-dotnettools.csharp",
+				"formulahendry.dotnet-test-explorer",
+				"fernandoescolar.vscode-solution-explorer",
+				"shardulm94.trailing-spaces",
+				"pkief.material-icon-theme",
+				"jmrog.vscode-nuget-package-manager",
+				"patcx.vscode-nuget-gallery",
+				"k--kato.docomment",
+				"formulahendry.dotnet",
+				"2gua.rainbow-brackets",
+				"oderwat.indent-rainbow",
+				"donjayamanne.githistory"
 			]
 		}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
