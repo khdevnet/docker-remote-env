@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/DRE.Api/bin/Debug/net7.0/DRE.Api.dll",
+            "program": "${workspaceFolder}/DRE.Api/bin/Debug/net7.0/DRE.Api.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/DRE.Api",
+            "cwd": "${workspaceFolder}/DRE.Api",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
@@ -30,15 +30,6 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
-        },
-        {
-            "name": "Docker .NET Launch",
-            "type": "docker",
-            "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "netCore": {
-                "appProject": "${workspaceFolder}/DRE/DRE.Api/DRE.Api.csproj"
-            }
         }
     ]
 }
