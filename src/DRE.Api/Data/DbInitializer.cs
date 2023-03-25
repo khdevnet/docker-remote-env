@@ -1,4 +1,5 @@
 ﻿using DRE.Api.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace DRE.Api.Data;
 public static class DbInitializer
@@ -12,16 +13,16 @@ public static class DbInitializer
     {
         context.Database.EnsureCreated();
 
-        // Look for any students.
+        // DB has been seeded
         if (context.Forecasts.Any())
         {
-            return;   // DB has been seeded
+            return;  
         }
 
         var forecasts = Enumerable.Range(1, 5)
             .Select(index => new WeatherForecast
             {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = _summaries[Random.Shared.Next(_summaries.Length)]
             })

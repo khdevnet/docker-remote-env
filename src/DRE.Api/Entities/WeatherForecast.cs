@@ -4,7 +4,7 @@ namespace DRE.Api.Entities
     {
         public int Id { get; set; }
 
-        public DateOnly Date { get; set; }
+        public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
 
