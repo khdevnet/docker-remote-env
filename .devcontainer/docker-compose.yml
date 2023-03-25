@@ -6,9 +6,6 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-      # [Optional] You can use build args to set options. e.g. 'VARIANT' below affects the image in the Dockerfile
-      args: 
-        VARIANT: buster
 
     volumes:
       # This is where VS Code should expect to find your project's source code and the value of "workspaceFolder" in .devcontainer/devcontainer.json
