@@ -1,3 +1,4 @@
+using DRE.Api.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DRE.Api.Controllers

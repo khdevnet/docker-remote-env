@@ -10,5 +10,5 @@ public class WeatherDbContext : DbContext
     {
     }
 
-    public DbSet<Summary> Summaries { get; set; }
+    public DbSet<WeatherForecast> Forecasts { get; set; }
 }
