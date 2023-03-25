@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/base:jammy
     
 RUN curl -s https://raw.githubusercontent.com/khdevnet/wsl2-env/main/install-dotnet7.sh | bash
+RUN dotnet dev-certs https --trust
 
 RUN curl -s https://raw.githubusercontent.com/khdevnet/wsl2-env/main/install-git.sh | sh
 

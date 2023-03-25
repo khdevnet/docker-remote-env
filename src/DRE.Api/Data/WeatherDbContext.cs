@@ -1,5 +1,14 @@
 namespace DRE.Api.Data;
 
-public class SchoolContext : DbContext
+using Microsoft.EntityFrameworkCore;
+using DRE.Api.Entities;
+
+public class WeatherDbContext : DbContext
 {
+    public WeatherDbContext(DbContextOptions<WeatherDbContext> options) 
+    : base(options)
+    {
+    }
+
+    public DbSet<Summary> Summaries { get; set; }
 }
