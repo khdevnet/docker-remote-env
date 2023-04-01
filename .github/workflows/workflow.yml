@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install VS Code Dev Containers CLI
-        run: npm i -g @devcontainers/cli
+        run: npm i -g @devcontainers/cli@0.35
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
