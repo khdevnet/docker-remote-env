@@ -10,8 +10,7 @@ namespace DRE.Api.Controllers
     {
         private readonly WeatherDbContext _db;
 
-        public WeatherForecastController(WeatherDbContext db)
-            => _db = db;
+        public WeatherForecastController(WeatherDbContext db) => _db = db;
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
