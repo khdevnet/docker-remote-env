@@ -37,5 +37,3 @@ services:
         - ACCEPT_EULA=Y
         - SA_PASSWORD=yourStrong(!)Password
         - MSSQL_PID=Express
-    volumes:
-        - ../volumes/mssql:/var/opt/mssql/data
