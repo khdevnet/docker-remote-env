@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - official
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -20,4 +21,4 @@ jobs:
         env:
           CONTAINER_IMAGE: khdevnet/devdotnetsqlenv
         run: |
-          devcontainer build --image-name $CONTAINER_IMAGE --platform "linux/amd64" --push true --workspace-folder ./
+          devcontainer build --image-name $CONTAINER_IMAGE --push true --workspace-folder ./
